@@ -1,0 +1,7 @@
+<input [(ngModel)]="searchTerm" placeholder="Buscar personaje">
+<button (click)="buscar()">Buscar</button>
+
+<app-personaje
+  *ngFor="let character of filteredCharacters"
+  [personaje]="character">
+</app-personaje>
